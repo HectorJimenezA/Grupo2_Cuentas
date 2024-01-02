@@ -10,7 +10,7 @@ import com.banquito.core.banking.cuentas.service.CuentaIntervinientesService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cuentaIntervinientes")
+@RequestMapping("/api/cuentaIntervinientes")
 public class CuentaIntervinientesController {
 
     @Autowired

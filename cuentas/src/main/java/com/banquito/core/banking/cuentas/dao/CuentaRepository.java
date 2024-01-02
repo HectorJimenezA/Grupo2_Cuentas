@@ -15,6 +15,6 @@ public interface CuentaRepository extends CrudRepository<Cuenta, Long>{
 
     List<Cuenta> findByTipoCuenta(TipoCuenta tipoCuenta);
 
-    List<Cuenta> findBySaldoContableGreaterThan(@Param("saldo") long saldo);
+    List<Cuenta> findBySaldoContableGreaterThan(@Param("saldo") Long saldo);
 
 }

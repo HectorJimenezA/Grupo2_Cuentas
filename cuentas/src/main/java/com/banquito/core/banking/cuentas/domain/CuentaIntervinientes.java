@@ -1,14 +1,10 @@
 package com.banquito.core.banking.cuentas.domain;
 
-import java.sql.Date;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-import jakarta.persistence.Version;
+import java.security.Timestamp;
+
+import jakarta.persistence.*;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,11 +21,11 @@ public class CuentaIntervinientes {
 
     @Column(name = "FECHA_INICIO", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
-    private Date fechaInicio;
+    private Timestamp fechaInicio;
 
     @Column(name = "FECHA_FIN")
     @Temporal(TemporalType.TIMESTAMP)
-    private Date fechaFin;
+    private Timestamp fechaFin;
 
     @Column(name = "ESTADO", nullable = false)
     private String estado;

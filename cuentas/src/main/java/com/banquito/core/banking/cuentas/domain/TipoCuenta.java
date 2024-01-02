@@ -1,6 +1,7 @@
 package com.banquito.core.banking.cuentas.domain;
 
-import java.security.Timestamp;
+import java.sql.Timestamp;
+
 import java.util.List;
 
 import jakarta.persistence.*;
