@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import jakarta.persistence.Version;
 @Getter
 @Setter
 @NoArgsConstructor
@@ -35,7 +34,7 @@ public class TasaInteres {
     private Long tasaMaxima;
 
     @Version
-    private long version;
+    private Long version;
     public TasaInteres(String codigo) {
         this.codigo = codigo;
     }
@@ -57,7 +56,6 @@ public class TasaInteres {
         return "TasaInteres [codigo=" + codigo + ", tipoCuenta=" + tipoCuenta + ", tipo=" + tipo + ", nombre=" + nombre
                 + ", tasaMinima=" + tasaMinima + ", tasaMaxima=" + tasaMaxima + ", version=" + version + "]";
     }
-
 
 
 }

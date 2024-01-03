@@ -34,7 +34,7 @@ public class CuentaController {
 
 
     @GetMapping("/saldo-contable-greater-than/{saldo}")
-    public ResponseEntity<List<Cuenta>> getCuentasWithSaldoContableGreaterThan(@PathVariable("saldo") long saldo) {
+    public ResponseEntity<List<Cuenta>> getCuentasWithSaldoContableGreaterThan(@PathVariable("saldo") Long saldo) {
         List<Cuenta> cuentas = cuentaService.getCuentasWithSaldoContableGreaterThan(saldo);
         return new ResponseEntity<>(cuentas, HttpStatus.OK);
     }

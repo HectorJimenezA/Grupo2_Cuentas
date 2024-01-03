@@ -1,7 +1,8 @@
 package com.banquito.core.banking.cuentas.domain;
 
 
-import java.security.Timestamp;
+
+import java.sql.Timestamp;
 
 import jakarta.persistence.*;
 
@@ -20,18 +21,16 @@ public class CuentaIntervinientes {
     private CuentaIntervinientesPK cuentaIntervinientesPK;
 
     @Column(name = "FECHA_INICIO", nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
     private Timestamp fechaInicio;
 
     @Column(name = "FECHA_FIN")
-    @Temporal(TemporalType.TIMESTAMP)
     private Timestamp fechaFin;
 
     @Column(name = "ESTADO", nullable = false)
     private String estado;
 
     @Version
-    private long version;
+    private Long version;
 
     public CuentaIntervinientes(CuentaIntervinientesPK cuentaIntervinientesId) {
         this.cuentaIntervinientesPK = cuentaIntervinientesId;

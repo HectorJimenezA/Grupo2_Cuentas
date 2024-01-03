@@ -2,9 +2,7 @@ package com.banquito.core.banking.cuentas.domain;
 
 import java.io.Serializable;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Version;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -61,5 +59,6 @@ public class CuentaIntervinientesPK implements Serializable {
             return false;
         return true;
     }
+
 }
 

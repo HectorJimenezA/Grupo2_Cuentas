@@ -23,14 +23,7 @@ public class Transaccion {
     @ManyToOne()
     @JoinColumn(name = "COD_CUENTA")
     private Cuenta cuenta;
-
-    /*
-     * OPCIONAL
-     * 
-     * @Column(name = "COD_CUENTA", nullable = false)
-     * private Long codigoCuenta;
-     */
-
+    
     @Column(name = "COD_UNICO", nullable = false, length = 64)
     private String codigoUnico;
 
@@ -50,14 +43,12 @@ public class Transaccion {
     private String detalle;
 
     @Column(name = "FECHA_CREACION", nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
     private Timestamp fechaCreacion;
 
     @Column(name = "ESTADO", nullable = false)
     private String estado;
 
     @Column(name = "FECHA_AFECTACION")
-    @Temporal(TemporalType.TIMESTAMP)
     private Timestamp fechaAfectacion;
 
     @Version

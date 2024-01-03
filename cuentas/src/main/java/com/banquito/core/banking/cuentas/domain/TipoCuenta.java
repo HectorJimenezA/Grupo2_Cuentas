@@ -47,7 +47,6 @@ public class TipoCuenta {
     private String MaximoNumeroIntervinientes;
 
     @Column(name = "FECHA_CREACION", nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
     private Timestamp fechaCreacion;
 
     @Version
@@ -93,6 +92,5 @@ public class TipoCuenta {
                 + "]";
     }
 
-    
 
 }

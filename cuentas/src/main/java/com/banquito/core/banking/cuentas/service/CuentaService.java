@@ -28,7 +28,7 @@ public class CuentaService {
         return cuentaRepository.findByTipoCuenta(tipoCuenta);
     }
 
-    public List<Cuenta> getCuentasWithSaldoContableGreaterThan(long saldo) {
+    public List<Cuenta> getCuentasWithSaldoContableGreaterThan(Long saldo) {
         return cuentaRepository.findBySaldoContableGreaterThan(saldo);
     }
 
